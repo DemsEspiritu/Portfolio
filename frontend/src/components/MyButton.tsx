@@ -6,6 +6,7 @@ export default function MyButton(props: { count: number, handleCount: () => void
             <button onClick={props.handleCount}>
                 {props.count}
             </button>
+            //Helllo
         </div>
     )
 }
