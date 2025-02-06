@@ -2,12 +2,13 @@ import { TypeAnimation } from 'react-type-animation';
 import pic from '../images/pic.jpg'
 import download from '../images/download.png'
 
+
 const Profile = () => {
 
     return (
         <>
-            <div className='flex justify-center mt-20 mb-16'>
-                <div className='flex flex-col items-center justify-between h-full w-full mt-14 lg:flex-row lg:w-3/4 lg:text-left lg:mt-20'>
+            <div id='element' className='custom flex justify-center mt-16  -z-10 '>
+                <div className='flex flex-col items-center justify-between w-full mt-14'>
                     <div className='text-center p-2 mb-3 lg:text-center lg:w-96 '>
                         <p className='mb-3 font-bold text-1xl text-violet-500 lg:text-4xl'>Hello!</p>
                         <TypeAnimation
@@ -24,11 +25,11 @@ const Profile = () => {
                             repeat={Infinity}
                         />
                         <p className='text-white text-xs mt-2 lg:text-lg'>As a recent graduate, I am eager to build a long-term career in web development.</p>
-                        <br/>
-                        <button className=' btn-download bg-violet-500 w-36'><img src={download} alt="" /></button>
+                        <br />
+                        <button className='rounded-md p-2 bg-violet-500 w-36'><img src={download} alt="" /></button>
                     </div>
                     <div className='pic'>
-                        <img src={pic} className='profile rounded-lg w-72 h-72 lg:w-80 lg:h-80 lg:' alt="" />
+                        <img src={pic} className='profile rounded-xl w-72 h-72 lg:w-80 lg:h-80' alt="picture" />
                     </div>
                 </div>
             </div>
