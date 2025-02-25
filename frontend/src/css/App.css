@@ -2,7 +2,7 @@
 
 .custom{
     font-family: "Press Start 2P", serif;
-    
+    color: #872341;
 }
 
 *{
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #140021;
+    background: -webkit-linear-gradient(#000000, #3e4243, #000000);
     font-optical-sizing: auto;
     padding: 0;
     margin: 0;
@@ -67,10 +67,23 @@ body {
     transform: scale(1.1);
 }
 
-
+.icon{
+    background-color: #140021;
+}
 
 
 .nav {
-    background-color: #560090;
+    background-color: #5b6161;
 }
 
+
+.education{
+    background-color: #140021;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.project{
+    background-color: #030304;
+}
