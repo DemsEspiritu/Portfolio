@@ -5,7 +5,7 @@ import download from '../images/download.png'
 
 const Profile = () => {
     const downloadFile = () => {
-        const fileUrl = "/ESPIRITUDEMET_CV.pdf"; // Replace with your file URL
+        const fileUrl = "/ESPIRITU_DEMET-CV.pdf"; // Replace with your file URL
         const link = document.createElement("a");
         link.href = fileUrl;
         link.setAttribute("download", "ESPIRITU_DEMET-CV.pdf"); // Download attribute
