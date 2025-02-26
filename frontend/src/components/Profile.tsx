@@ -8,7 +8,7 @@ const Profile = () => {
         const fileUrl = "/ESPIRITUDEMET_CV.pdf"; // Replace with your file URL
         const link = document.createElement("a");
         link.href = fileUrl;
-        link.setAttribute("download", "ESPIRITUDEMET_CV.pdf"); // Download attribute
+        link.setAttribute("download", "ESPIRITU_DEMET-CV.pdf"); // Download attribute
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

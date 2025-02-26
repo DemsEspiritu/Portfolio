@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import {  MdOutlineEmail } from "react-icons/md";
 
 const Navbar = () => {
     const [modal, setModal] = useState<boolean>(false)
