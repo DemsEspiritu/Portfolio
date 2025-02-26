@@ -17,7 +17,7 @@ const Education = () => {
                     <div className='flex justify-center mb-2'>
                         <img src={school1} className='w-40 h-40' alt="school" />
                     </div>
-                    <p className='text-sm'>2020-2021</p>
+                    <p className='text-sm'>2017-2019</p>
                     <p className='text-sm'>General Academic Strand</p>
                 </div>
             </div>
