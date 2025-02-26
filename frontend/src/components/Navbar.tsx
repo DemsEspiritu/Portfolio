@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
 const Navbar = () => {
     const [modal, setModal] = useState<boolean>(false)
@@ -28,12 +30,40 @@ const Navbar = () => {
                 {modal ?
                     <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50">
                         <div>
-                            <div className="bg-white w-80 h-96 m-auto mt-20 p-10 rounded-lg md:w-4/5 md:h-3/5 lg:w-2/4">
+                            <div className="bg-white w-80 h-96 m-auto mt-20 lg:mt-2 p-10 rounded-lg md:w-4/5 md:h-3/5 lg:w-2/4">
                                 <div className="flex justify-end">
-                                    <button onClick={closeModal} className="text-red-500 text-3xl">X</button>
+                                    <button onClick={closeModal} className="text-red-500 text-3xl font-extrabold">X</button>
                                 </div>
                                 <div>
-                                    <h1 className="text-3xl">Modal</h1>
+                                    <h1 className="text-3xl">Contact Info</h1>
+                                </div>
+                                <div className='flex flex-col gap-5 m-5 bg-slate-300 p-5 rounded-md'>
+                                    <div className='flex gap-5 text-1xl items-center'>
+                                        <FaPhoneAlt className='text-red-600'/>
+                                        <h3 className='font-bold'><span className='italic'>09630030476</span></h3>
+                                    </div>
+                                    <div className='flex gap-5 text-1xl items-center '>
+                                        <MdOutlineEmail className='text-red-500'/>
+                                        <h2 className='font-bold italic'>demet.espiritu28@gmail.com</h2>
+                                    </div>
+
+                                    {/* <div className='flex gap-5 text-2xl items-center '>
+                                        <FaFacebook className='text-blue-500'/>
+                                        <h2 className='font-bold'>demet.espiritu28@gmail.com</h2>
+                                    </div>
+
+                                    <div className='flex gap-5 text-2xl items-center '>
+                                        <FaGithub className='text-black'/>
+                                        <h2 className='font-bold'>demet.espiritu28@gmail.com</h2>
+                                    </div>
+
+                                    <div className='flex gap-5 text-2xl items-center '>
+                                        <FaLinkedin className='text-blue-500'/>
+                                        <h2 className='font-bold'>demet.espiritu28@gmail.com</h2>
+                                    </div> */}
+                                </div>
+                                <div>
+                                    <h1 className="text-3xl mb-3">Social Accounts</h1>
                                 </div>
                                 <div>
                                     <div className="flex flex-col gap-5 rounded-md justify-center items-center md:flex-row">
@@ -55,6 +85,7 @@ const Navbar = () => {
                                             <span className="text-white text-sm">@demet-espiritu</span>
                                             <button className="bg-blue-400 pl-5 pr-5 pt-2 pb-2 m-5 rounded-md font-bold cursor-pointer"><a href="https://www.linkedin.com/in/demet-espiritu-007032331/">Visit</a></button>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
